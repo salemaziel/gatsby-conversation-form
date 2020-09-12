@@ -1,0 +1,514 @@
+body {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55) 33%,
+      rgba(0, 0, 0, 0.45) 66%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/*
+body,
+.wrapper {
+  min-height: 100vh;
+  color: #313f47;
+}
+*/
+
+.wrapper {
+  margin: 4.5rem 0 0;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin: 1.5rem 0 0;
+  }
+}
+
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+main {
+  margin: 40px auto 0;
+}
+
+
+.outerConvo {
+  min-height: 600px;
+}
+
+@media screen and (max-width: 480px) {
+  .outerConvo{
+  min-height: 500px;
+}
+}
+
+.conversational-form {
+margin: 2rem!important;
+background: rgba(255, 255, 255, 0)!important;
+border-radius: 10px;
+}
+
+.conversational-form:before {
+background: rgba(255, 255, 255, 0)!important;
+}
+
+cf-input-control-elements {
+background: black!important;
+}
+
+.conversational-form--enable-animation cf-chat-response.user.peak-thumb thumb {
+  background-image: url('https://codestaff.io/static/salem-47e00ba1a074f5df1ee6e506d2fa2cd6.png')!important;
+}
+
+@media screen and (max-width: 480px){
+  .conversational-form {
+    margin: 1.5rem auto auto!important;
+    background: rgba(255, 255, 255, 0)!important;
+    }
+}
+
+
+#root,
+.fullpage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  text-align: left;
+}
+
+.fullpage .thankyou-widget {
+  margin: 0;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-end {
+  -webkit-box-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+}
+
+.align-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+[contenteditable='true'] {
+  border: 1px dashed grey;
+  outline: none;
+}
+
+.inputfile {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.upload {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+}
+
+.logo:hover .upload {
+  visibility: visible;
+}
+
+.upload label {
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  background-image: url(/image/upload.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: 25px;
+}
+
+.upload button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 0;
+  height: 100%;
+  background: none;
+  background-image: url(/image/close.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
+.upload label:hover,
+.upload button:hover {
+  background-color: #666;
+  opacity: 0.8;
+}
+
+.title {
+  width: 330px;
+  margin: 2rem auto;
+  text-align: center;
+  color:#f3c506;
+  text-shadow: 2px 2px 3px black;
+  font-variant-caps: all-small-caps;
+}
+
+.title-edit {
+  position: relative;
+  border: 1px dashed transparent;
+}
+.title-edit:hover {
+  border: 1px solid #2fa5cc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(102, 175, 233, 0.6);
+}
+
+.title-edit:hover:before {
+  content: '\f044';
+  font-family: 'Font Awesome 5 Free' !important;
+  font-weight: 900;
+  position: absolute;
+  right: -22px;
+  font-size: 16px;
+  bottom: 45px;
+  color: #2fa5cc;
+}
+
+.subtitle {
+  margin: 10px 20px;
+  filter: grayscale(20%)!important;
+  font-weight: 600;
+  text-align: center;
+  color: #f3c506;
+}
+
+.subtitle-edit {
+  position: relative;
+  border: 1px dashed transparent;
+}
+.subtitle-edit:hover {
+  border: 1px solid #2fa5cc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(102, 175, 233, 0.6);
+}
+
+.logo {
+  margin: 0px auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.url-box {
+  display: inline-block;
+  width: 250px;
+}
+
+.dorp-down-wrapper {
+  display: inline-block;
+}
+
+.edit-links {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-links {
+  display: inline-block;
+}
+
+.contact-wrapper {
+  position: relative;
+}
+
+
+.video-bg video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+  
+.bubble-label > iframe {
+  width: 450px;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.personal {
+  z-index: 1;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+
+.card-body {
+    padding: 0 1.25rem 1.25rem;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgb(195, 40, 48); 
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(195, 40, 48, 0.25);
+}
+
+.card-footer {
+  width: 100%;
+  border-top: 1px solid #e1e4e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer a {
+  text-align: center;
+  flex: 1;
+  line-height: 40px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.card-footer a:hover {
+  background: #e6e6e6;
+}
+.card-footer .divider {
+  width: 1px;
+  height: 40px;
+  background: #e1e4e9;
+}
+
+
+#estimate {
+  background: transparent !important;
+  background-color: transparent !important;
+  margin: auto;
+  border: none !important;
+  max-width: 30%;
+  max-height: 85%;
+  padding: 15px 15px!important;
+}
+
+#signup {
+  background: transparent !important;
+  background-color: transparent !important;
+  margin: auto;
+  border: none !important;
+  max-width: 30%;
+  max-height: 70%;
+  padding: 15px 15px!important;
+}
+
+
+ul.actions {
+  list-style: none !important;
+  padding-inline-start: 0;
+}
+
+#iconspace {
+  font-size: 1.5rem;
+  margin: auto 15px auto 0;
+}
+
+#iconspace:hover,
+#iconspace:focus,
+#iconspace:focus-within,
+#iconspace:active {
+  font-size: 1.5rem;
+  margin: auto 15px auto 0;
+}
+
+#socialiconspace {
+  margin: auto 15px;
+  font-size: 2rem;
+}
+
+#socialiconspace:hover,
+#socialiconspace:focus,
+#socialiconspace:focus-within,
+#socialiconspace:active {
+  margin: auto 15px;
+
+}
+
+.sectionWrap {
+  margin: 8% auto;
+}
+
+.NoDesktop {
+  display: none;
+}
+
+.NoMobile {
+  display: flex;
+}
+
+@media screen and (min-width: 2400px) {
+  .NoDesktop {
+    display: none;
+  }
+
+  .NoMobile {
+    display: flex;  }
+}
+
+@media screen and (max-width: 1680px) {
+  #estimate {
+    background: transparent !important;
+    background-color: transparent !important;
+    margin: auto;
+    border: none !important;
+    max-width: 50%;
+    padding: 15px 15px!important;
+  }
+  
+  #signup {
+    background: transparent !important;
+    background-color: transparent !important;
+    margin: auto;
+    border: none !important;
+    max-width: 50%;
+    padding: 15px 15px!important;
+  }
+  
+  .NoDesktop {
+    display: none;
+  }
+
+  .NoMobile {
+    display: flex;  }
+}
+
+@media screen and (max-width: 1280px) {
+  .NoDesktop {
+    display: none;
+  }
+
+  .NoMobile {
+    display: flex;  }
+}
+
+@media screen and (max-width: 980px) {
+  .NoDesktop {
+    display: block;
+  }
+
+  .NoMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+
+  #estimate {
+    max-width: 80%;
+}
+
+#signup {
+  max-width: 80%;
+}
+
+  .NoDesktop {
+    display: block;
+  }
+
+  .NoMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #estimate {
+    max-width: 100%;
+    box-shadow: 5px 5px 15px 5px black;
+    background-color: white!important;
+    height: 540px;
+}
+
+#signup {
+  max-width: 100%;
+  box-shadow: 5px 5px 15px 5px black;
+  background-color: white!important;
+  height: 540px;
+}
+
+ul.actions {
+    list-style: none!important;
+    padding-inline-start: 0;
+}
+
+.special {
+    list-style: none!important;
+}
+
+.sectionWrap {
+  margin: 25% auto;
+}
+
+
+  .NoDesktop {
+    display: block;
+  }
+
+  .NoMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .NoDesktop {
+    display: block;
+  }
+
+  .NoMobile {
+    display: none;
+  }
+}
